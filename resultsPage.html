@@ -10,11 +10,15 @@
 </head>
 <body>
     <div class="maincard">
-        <p>Upload your AutoCAD file here to be graded</p>
-        <p>(.dxf format only)</p>
+        <div id="grid-container">
+            <div>Student submission:</div>
+            <div>Target file:</div>
+            <div><img id="studentImage" src="./image/student.jpg"></div>
+            <div><img id="solutionImage" src="./image/solution.jpg"></div>
+        </div>
 
-        <input class="custom-file-input" type="file" accept=".dxf"/>
-        <input class="custom-submit-button" type="submit"/>
+        <p class="resultText">Score: 97/100</p>
+        <p class="resultText">Justification: bla bla bla</p>
     </div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 body {
-    overflow: hidden;
-    position: fixed;
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    /* position: fixed; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     min-height: 100vh;
@@ -41,6 +42,8 @@ body {
 }
 
 .custom-submit-button {
+    display: block;
+    margin-top: 2em;
     border: 1px solid #999;
     border-radius: 0.5em 0.5em 0.5em 0.5em;
     background-color: transparent;
@@ -48,6 +51,9 @@ body {
     cursor: pointer;
     color: white;
     padding: 5px 8px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .custom-submit-button:hover {
     background-color: rgb(15, 47, 56);
@@ -72,6 +78,7 @@ body {
 /* end of code from CSS-Tricks */
 
 .maincard {
+    min-width: 15rem;
     align-content: center;
     text-align: center;
     margin-top: 5rem;
@@ -83,3 +90,23 @@ body {
     background-color: rgb(28, 69, 80);
     border: 2px solid #d3d3d3;
 }
+
+img {
+    display: inline;
+    width: 90%;
+    height: 90%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+ }
+
+#grid-container > div {
+    text-align: center;
+}
+
+/* .imageContainer {
+    display: flex;
+    justify-content: center;
+} */
